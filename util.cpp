@@ -15,4 +15,15 @@ void print_sequence(T const& x){
     std::cout << std::endl;
 }
 
+template<class Iterable>
+void print_seq_of_seq(Iterable& seq) {
+	for (auto s : seq) {
+		for (auto e : s) {
+			std::cout << e << " ";
+		}
+		std::cout << " , ";
+	}
+	std::cout << std::endl;
+}
+
 #endif /*_UTIL*/

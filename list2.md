@@ -18,4 +18,3 @@
 ## Exercise 7 - convex hull
 
 - 
-

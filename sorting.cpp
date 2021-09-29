@@ -4,6 +4,7 @@
 #include "util.cpp"
 #include "bubble_sort.cpp"
 #include "selection_sort.cpp"
+#include "insertion_sort.h"
 
 using namespace std;
 
@@ -29,5 +30,13 @@ int main(){
     selection_sort(a.begin(), a.end(), greater<int>());
     print_sequence(a);
 
-    return 0;
+    cout << "INSERTION SORT" << endl;
+
+    vector<int> b ({5, 7, 1, 3, 5});
+    print_sequence(b);
+    insertion_sort(b);
+    print_sequence(b);
+    // insertion_sort(b, greater<int>());
+    // print_sequence(b);
+
 }
