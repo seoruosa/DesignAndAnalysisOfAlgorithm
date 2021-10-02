@@ -14,10 +14,10 @@ public:
     int i;
     Arrow arrow;
 
-    ArrowNumber(int _i, Arrow _arrow)
+    ArrowNumber(int t_i, Arrow t_arrow)
     {
-        i = _i;
-        arrow = _arrow;
+        i = t_i;
+        arrow = t_arrow;
     }
 
     ArrowNumber()
@@ -40,11 +40,11 @@ auto find_mobile = [](std::vector<ArrowNumber> arrowNumber)
     int LAST_ELEMENT = arrowNumber.size() - 1;
     int mobile = -1;
 
-    auto onLeft = [&](int _i)
-    { return (_i != 0 && arrowNumber[_i].arrow == Arrow::LEFT && arrowNumber[_i - 1].i < arrowNumber[_i].i); };
+    auto onLeft = [&](int t_i)
+    { return (t_i != 0 && arrowNumber[t_i].arrow == Arrow::LEFT && arrowNumber[t_i - 1].i < arrowNumber[t_i].i); };
     
-    auto onRight = [&](int _i)
-    { return (_i != LAST_ELEMENT && arrowNumber[_i].arrow == Arrow::RIGHT && arrowNumber[_i + 1].i < arrowNumber[_i].i); };
+    auto onRight = [&](int t_i)
+    { return (t_i != LAST_ELEMENT && arrowNumber[t_i].arrow == Arrow::RIGHT && arrowNumber[t_i + 1].i < arrowNumber[t_i].i); };
 
     for (int i = 0; i <= LAST_ELEMENT; i++)
     {
