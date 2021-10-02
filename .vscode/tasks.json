@@ -4,7 +4,7 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++20: g++ build active file",
-			"command": "/usr/bin/g++",
+			"command": "/usr/bin/g++-10",
 			"args": [
 				"-g",
 				"${file}",
