@@ -72,11 +72,11 @@ int main(){
         std::cout << std::endl; 
         };
 
-    print_matriz(distances);
+    // print_matriz(distances);
 
-    std::vector<int> a = tspBruteForce(distances);
+    // std::vector<int> a = tspBruteForce(distances);
 
-    print_sequence(a);
+    // print_sequence(a);
 
-    permutations(5);
+    permutations(10);
 }
