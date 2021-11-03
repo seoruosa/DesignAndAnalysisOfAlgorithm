@@ -26,4 +26,14 @@ void print_seq_of_seq(Iterable& seq) {
 	std::cout << std::endl;
 }
 
+template<class Iterable>
+void print_matrix(Iterable& seq) {
+	for (auto s : seq) {
+		for (auto e : s) {
+			std::cout << e << " ";
+		}
+		std::cout << std::endl;
+	}
+	std::cout << std::endl;
+}
 #endif /*_UTIL*/

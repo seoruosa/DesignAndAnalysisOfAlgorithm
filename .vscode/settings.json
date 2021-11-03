@@ -48,6 +48,7 @@
         "concepts": "cpp",
         "set": "cpp",
         "ranges": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "chrono": "cpp"
     }
 }
