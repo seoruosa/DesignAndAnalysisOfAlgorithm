@@ -49,6 +49,10 @@
         "set": "cpp",
         "ranges": "cpp",
         "list": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "queue": "cpp",
+        "ctime": "cpp",
+        "map": "cpp",
+        "ratio": "cpp"
     }
 }

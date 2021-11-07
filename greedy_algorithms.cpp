@@ -7,14 +7,18 @@ int main()
 {
 
     std::vector<std::vector<float>> graph({
-        {0, 4, 9, 5},
-        {4, 0, 7, 6},
-        {9, 7, 0, 8},
-        {5, 6, 8, 0},
+        {INF, 4, 9, 5},
+        {4, INF, 7, 6},
+        {9, 7, INF, 8},
+        {5, 6, 8, INF},
     });
 
-    auto result = prim(graph);
+    auto result = prim_n2(graph);
 
     print_matrix(result);
 
+    // auto a = Node({0, 1.1});
+    // auto b = Node({1, 1.5});
+
+    // std::cout << (b > a) << std::endl;
 }
