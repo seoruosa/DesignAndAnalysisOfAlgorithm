@@ -47,22 +47,6 @@ std::vector<std::vector<float>> prim(std::vector<std::vector<float>> &graph)
     return result;
 }
 
-// template <typename T>
-// class Edge
-// {
-//     private:
-//         int node_from;
-//         int node_to;
-//         T weight;
-
-//     public:
-//         Edge::Edge(int node_from, int node_to, T weight){
-//             this->node_from = node_from;
-//             this->node_to = node_to;
-//             this->weight = weight;
-//         }
-// };
-
 class Node
 {
 public:
