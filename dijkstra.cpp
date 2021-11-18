@@ -35,11 +35,11 @@ std::vector<NodePath> dijkstra(std::vector<std::vector<Node>> G, int source)
         auto actual_vertex = Q.top();
         Q.pop();
 
-        for (auto adj: G[actual_vertex.index_from])
+        for (auto adj_vertex: G[actual_vertex.index_from])
         {
-            auto adj_index = adj.index;
+            auto adj_index = adj_vertex.index;
 
-            auto new_distance = actual_vertex.distance + adj.weight;
+            auto new_distance = actual_vertex.distance + adj_vertex.weight;
             auto actual_distance = answer[adj_index].distance;
             
             if (new_distance < actual_distance)
