@@ -53,6 +53,12 @@
         "queue": "cpp",
         "ctime": "cpp",
         "map": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "bitset": "cpp",
+        "condition_variable": "cpp",
+        "cstring": "cpp",
+        "regex": "cpp",
+        "shared_mutex": "cpp",
+        "stop_token": "cpp"
     }
 }
